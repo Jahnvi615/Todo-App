@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Create Task</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input id="taskName" class="form-control" [(ngModel)]="task.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="completedDate">Completed Date</label>
+        <input type="date" id="completedDate" class="form-control" [(ngModel)]="task.completedDate" name="completedDate" required>
+      </div>
+      <button type="submit" class="btn btn-success mt-3">Save</button>
+    </form>
+  </div>
+  
